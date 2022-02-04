@@ -1,0 +1,20 @@
+/* li,div{
+    color: maroon;
+} */
+.class{
+    color: rgb(0, 205, 27);
+    background-color: peru;
+}
+.nav{
+    background-color: mediumorchid;
+
+}
+.items{
+       background-color: midnightblue;
+}
+.item{
+     background-color: orangered;
+}
+body{
+    background-image: url(../img)
+}

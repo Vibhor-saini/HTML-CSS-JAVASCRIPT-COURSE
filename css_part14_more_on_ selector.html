@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selector</title>
+</head>
+<style>
+    h1{
+        background-color: yellow;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /*  If o is contained by any li which is contained by div */
+    /* div li p{
+        color: yellowgreen;
+        font-weight: bold;
+        background-color: tomato;
+    } */
+    
+    /*  In below div will parent of (p) or (p) is right inside of div */
+    /* div > p{
+        background-color: red;
+    } */
+
+    /* in below div will sibling of (p)  or (p) is right after of div  */
+    div + p{
+        background-color: red;
+    }
+</style>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+            <li><p>this ia extra paragraph</p></li>
+            <li>this will not get affected</li>
+            <p> This is a paragraph inside ul</p>
+        </ul>
+        <p>this is a paragraph</p>
+        </div>
+        <p> This is another paragraph</p>
+    </div>
+    <p>This is outer paragraph</p>
+</body>
+</html>

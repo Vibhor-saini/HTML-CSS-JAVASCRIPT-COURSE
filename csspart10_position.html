@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+       /* Css position: static(default) , relative , absolute, fixed, sticky */
+       .container{
+           border: 2px solid black;
+           width: 3px solid pink;
+           height: 2222px;
+           background-color: rgb(207, 128, 71);
+       }
+    .box{
+        display: inline-block;
+        border: 2px solid red;
+        width: 120px;
+        height: 130px;
+        margin: 3px;
+    }    
+    #box2{
+        /*  relative: relative to its normal position and wil leave a gap at its normal position */
+      /* position: relative;  */
+
+      /* absolute: relative to the position of its first parent. */
+      /* position: absolute; */
+      /* left: 36px;
+      top: 20px; */
+
+      /*  Fixed: position the element relative to the browser window */
+      /* position: fixed;
+      right: 3px;
+      bottom: 4px; */
+    
+      position:sticky;
+      top: 2px;
+      
+
+    } 
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">chat with us</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+   </div>
+</body>
+</html>

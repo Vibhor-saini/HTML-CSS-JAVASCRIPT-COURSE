@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+</head>
+<style>
+    .box{
+        background-color: rgb(224, 50, 6);
+        color: rgba(231, 220, 218, 0.637);
+        text-align: center;
+        font-size: 36px;
+        display: none;
+    }
+   @media only screen and (max-width:300px){
+       #box-1{
+           display: block;
+       }
+   }
+   @media( min-width:300px) and ( max-width:600px){
+       #box-2{
+           display: block;
+           color: rgb(20, 5, 3);
+           background-color: slateblue;
+       }
+   }
+   @media( min-width:600px) and ( max-width:700px){
+       #box-3{
+           display: block;
+           color: rgb(3, 20, 4);
+           background-color: seagreen;
+       }
+   }
+   @media( min-width:700px) and ( max-width:900px){
+       #box-4{
+           display: block;
+           color: rgb(204, 6, 98);
+           background-color: thistle;
+       }
+   }
+</style>
+<body>
+    <div class="box" id="box-1"> vibhor saini is a engineering student iPhone</div>
+    <div class="box" id="box-2">sugandha saini preparing for teacher's job Tablet</div>
+    <div class="box" id="box-3"> gaurav saini search a job for himself desktop computer</div>
+    <div class="box" id="box-4">anu and rupa get married wide computer</div>
+</body>
+</html>

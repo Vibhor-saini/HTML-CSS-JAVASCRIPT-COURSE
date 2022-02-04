@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+
+</head>
+<style>
+    body {
+        background-color: black;
+        color: rgb(87, 31, 31);
+        background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+
+
+        /* background-attachment: fixed; */
+
+    }
+
+    .navigation {
+        display: flex;
+
+
+    }
+
+    li {
+        list-style: none;
+        padding: 20px 23px;
+    }
+
+    .item {
+        font-size: 26px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
+        justify-content: center;
+        height: 344px;
+        margin: 3px 23px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    header ::before {
+        background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    /* section::before{
+        content: "this is a new content"
+    } */
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to My Coding</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus officiis? Porro iusto totam
+            fuga? Molestiae, earum consequatur cum quo provident neque possimus eum aliquid, odit ipsam obcaecati? Vero
+            sequi vitae magni iusto odio?</p>
+    </section>
+</body>
+
+</html>

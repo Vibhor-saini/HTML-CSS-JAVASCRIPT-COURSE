@@ -1,0 +1,15 @@
+p{
+    color:purple;
+    background-color: rgb(112, 128, 144);
+}
+
+/*     p{ color : blue ; }    */
+
+/* here p is a selector and color is a property and purple is a value  */
+
+/*  There are four type of selector in CSS 
+ 
+    1.CSS element selector
+    2.CSS id seletor
+    3.CSS class selector
+    4.The CSS grouping Selector */

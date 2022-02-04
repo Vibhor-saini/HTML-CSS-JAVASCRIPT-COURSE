@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        border: 2px solid black;
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: burlywood;
+
+        /* box-shadow: offset-x , offset-y color; */
+        /* box-shadow: offset-x , offset-y bluer radius color; */
+        /* box-shadow: offset-x , offset-y bluer radius spread-radius color; */
+
+        /* box-shadow: -12px -14px green; */
+        /* box-shadow: 12px 14px green; */
+        box-shadow: 12px 14px  12px green;
+        /* box-shadow: 12px 14px  12px 32px green; */
+        /* box-shadow: 12px 14px  12px 32px rgb(153, 55, 55); */
+        /* box-shadow: inset 3px 5px green ; */
+        /* box-shadow: inset 3px 5px green, 4px 3px red; */
+    }
+    .card h1{
+        text-shadow: -3px -3px 2px white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="class1">
+            <h1>my name is vibhor saini</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum suscipit inventore ex! Dolores numquam
+                consequatur laudantium eos, quod ea aliquam odio iusto. Alias, illum odio. Rerum perferendis nam aut
+                doloremque.</p>
+        </div>
+        <div class="card" id=" class2">
+            <h1>my name is sugandha saini</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero distinctio ducimus similique totam,
+                laboriosam possimus inventore est saepe doloribus optio quibusdam, enim cupiditate harum. Consectetur
+                animi enim inventore ullam delectus.</p>
+        </div>
+        <div class="card" id="class3">
+            <h1>my name is gaurav saini</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim possimus odit officia voluptas asperiores
+                adipisci ut assumenda a inventore? Expedita provident error dolore tempora quia id dicta assumenda enim
+                repudiandae?</p>
+        </div>
+</body>
+
+</html>
